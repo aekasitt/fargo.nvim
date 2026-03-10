@@ -9,6 +9,21 @@ function M.create_window()
   local config = statemgmt.get_config()
   local state = statemgmt.get_state()
 
+  -- Check if in a Rust workspace
+  local cwd = vim.fn.getcwd()
+  local cargo_toml = cwd .. '/Cargo.toml'
+  if vim.fn.filereadable(cargo_toml) ~= 1 then
+    vim.notify('Not a Rust workspace: Cargo.toml not found', vim.log.levels.WARN)
+    return
+  end
+
+  -- Check if workspace has members
+  local crates = utilities.get_workspace_crates()
+  if #crates == 0 then
+    vim.notify('No workspace members found in Cargo.toml', vim.log.levels.WARN)
+    return
+  end
+
   local width = config.window.width
   local height = config.window.height
 
@@ -186,12 +201,24 @@ function M.setup_keymaps()
   vim.api.nvim_create_autocmd('CursorMoved', {
     buffer = state.buf,
     callback = function()
-      local line = vim.api.nvim_win_get_cursor(state.win)[1]
+      if not state.win or not vim.api.nvim_win_is_valid(state.win) then
+        return
+      end
 
-      if line < first_crate_line then
-        vim.api.nvim_win_set_cursor(state.win, { first_crate_line, 0 })
-      elseif line > last_crate_line then
-        vim.api.nvim_win_set_cursor(state.win, { last_crate_line, 0 })
+      local line = vim.api.nvim_win_get_cursor(state.win)[1]
+      local first_line = 6
+      local last_line = 5 + #state.crates
+
+      -- Ensure we don't try to set cursor beyond buffer bounds
+      local buf_line_count = vim.api.nvim_buf_line_count(state.buf)
+      if last_line > buf_line_count then
+        last_line = buf_line_count
+      end
+
+      if line < first_line and first_line <= buf_line_count then
+        vim.api.nvim_win_set_cursor(state.win, { first_line, 0 })
+      elseif line > last_line and last_line > 0 then
+        vim.api.nvim_win_set_cursor(state.win, { last_line, 0 })
       end
     end,
   })
