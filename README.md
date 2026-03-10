@@ -1,12 +1,12 @@
 # Fargo
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/aekasitt/fargo/blob/master/LICENSE)
-[![Top](https://img.shields.io/github/languages/top/aekasitt/fargo)](https://github.com/aekasitt/fargo)
-[![Languages](https://img.shields.io/github/languages/count/aekasitt/fargo)](https://github.com/aekasitt/fargo)
-[![Size](https://img.shields.io/github/repo-size/aekasitt/fargo)](https://github.com/aekasitt/fargo)
-[![Last commit](https://img.shields.io/github/last-commit/aekasitt/fargo/master)](https://github.com/aekasitt/fargo)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/aekasitt/fargo.nvim/blob/master/LICENSE)
+[![Top](https://img.shields.io/github/languages/top/aekasitt/fargo.nvim)](https://github.com/aekasitt/fargo.nvim)
+[![Languages](https://img.shields.io/github/languages/count/aekasitt/fargo.nvim)](https://github.com/aekasitt/fargo.nvim)
+[![Size](https://img.shields.io/github/repo-size/aekasitt/fargo.nvim)](https://github.com/aekasitt/fargo.nvim)
+[![Last commit](https://img.shields.io/github/last-commit/aekasitt/fargo.nvim/master)](https://github.com/aekasitt/fargo.nvim)
 
-[![Fargo banner](https://github.com/aekasitt/fargo/blob/master/static/fargo-banner.svg)](static/fargo-banner.svg)
+[![Fargo banner](https://github.com/aekasitt/fargo.nvim/blob/master/static/fargo-banner.svg)](static/fargo-banner.svg)
 
 ## Features
 
@@ -17,7 +17,7 @@
 
 ## Demonstration
 
-[![Fargo demo](https://github.com/aekasitt/fargo/blob/master/static/fargo.gif)](static/fargo.gif)
+[![Fargo demo](https://github.com/aekasitt/fargo.nvim/blob/master/static/fargo.gif)](static/fargo.gif)
 
 ## Installation
 
