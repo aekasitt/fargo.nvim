@@ -6,8 +6,7 @@
 [![Size](https://img.shields.io/github/repo-size/aekasitt/fargo)](https://github.com/aekasitt/fargo)
 [![Last commit](https://img.shields.io/github/last-commit/aekasitt/fargo/master)](https://github.com/aekasitt/fargo)
 
-<!-- [![Fargo banner](https://github.com/aekasitt/fargo/blob/master/static/fargo-banner.svg)](static/fargo-banner.svg) -->
-[![Fargo banner](static/fargo-banner.svg)](static/fargo-banner.svg)
+[![Fargo banner](https://github.com/aekasitt/fargo/blob/master/static/fargo-banner.svg)](static/fargo-banner.svg)
 
 ## Features
 
@@ -15,6 +14,10 @@
 - Toggle visibility of individual crates
 - Open crates in fff file manager
 - Customizable keybindings and window appearance
+
+## Demonstration
+
+[![Fargo demo](https://github.com/aekasitt/fargo/blob/master/static/fargo.gif)](static/fargo.gif)
 
 ## Installation
 
