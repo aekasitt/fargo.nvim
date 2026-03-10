@@ -28,7 +28,10 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
       fff_integration = true,
     })
   end,
-  dependencies = { 'dmtrKovalenko/fff.nvim' },
+  dependencies = {
+    'dmtrKovalenko/fff.nvim',  -- (optional) for quick access
+    'nvim-tree/nvim-web-devicons',  -- (optional) for better icons
+  },
 }
 ```
 
@@ -66,6 +69,7 @@ In the dropdown window:
 - Neovim >= 0.8.0
 - A Rust workspace with `Cargo.toml` containing workspace members
 - (Optional) [fff.nvim](https://github.com/dmtrKovalenko/fff.nvim) for file manager integration
+- (Optional) [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) for better icons
 
 ## License
 
