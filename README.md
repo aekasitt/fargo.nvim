@@ -1,7 +1,13 @@
 # Fargo
 
-A Neovim plugin that integrates with [fff.nvim](https://github.com/dmtrKovalenko/fff.nvim)
-to provide a toggle dropdown for managing workspace crates visibility.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/aekasitt/fargo/blob/master/LICENSE)
+[![Top](https://img.shields.io/github/languages/top/aekasitt/fargo)](https://github.com/aekasitt/fargo)
+[![Languages](https://img.shields.io/github/languages/count/aekasitt/fargo)](https://github.com/aekasitt/fargo)
+[![Size](https://img.shields.io/github/repo-size/aekasitt/fargo)](https://github.com/aekasitt/fargo)
+[![Last commit](https://img.shields.io/github/last-commit/aekasitt/fargo/master)](https://github.com/aekasitt/fargo)
+
+<!-- [![Fargo banner](https://github.com/aekasitt/fargo/blob/master/static/fargo-banner.svg)](static/fargo-banner.svg) -->
+[![Fargo banner](static/fargo-banner.svg)](static/fargo-banner.svg)
 
 ## Features
 
