@@ -59,7 +59,7 @@ function M.create_window()
   vim.api.nvim_win_set_option(
     state.win,
     'winhighlight',
-    'Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:Visual,SignColumn:NormalFloat,LineNr:NormalFloat,CursorLineNr:NormalFloat'
+    'Normal:NormalFloat,CursorLine:Visual,CursorLineNr:NormalFloat'
   )
   vim.api.nvim_win_set_option(state.win, 'number', false)
   vim.api.nvim_win_set_option(state.win, 'relativenumber', false)
